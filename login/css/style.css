@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,500&family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&display=swap');
-
-*{
+* {
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
@@ -12,8 +11,8 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background: url("../img/background.png") no-repeat;
-    background-size:cover;
+    background: url("../img/background.webp") no-repeat;
+    background-size: cover;
     align-items: center;
     justify-content: center;
 }
@@ -29,10 +28,12 @@
     background-color: #1596DE;
     position: relative;
 }
+
 .login-image {
     position: absolute;
     top: -50px;
 }
+
 .check {
     display: flex;
     width: 90%;
@@ -45,8 +46,8 @@
 }
 
 .forgot-password a {
- color: #fff;
- text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .login-area {
@@ -55,8 +56,7 @@
     flex-direction: column;
 }
 
-
-.login-button  {
+.login-button {
     position: absolute;
     width: 250px;
     background-color: #f0773d;
@@ -71,7 +71,8 @@
     margin-top: 25px;
 }
 
-.signup p, a {
+.signup p,
+a {
     color: #fff;
     text-decoration: none;
     margin-left: 5px;
@@ -84,43 +85,49 @@
     border: none;
 }
 
-
-
-.rodape-info{
+.rodape-info {
     background-color: #1596DE;
 }
-.rodape-info p{
+
+.rodape-info p {
     color: #e1e1e1;
     transition: .4s;
 }
-.rodape-info p:hover{
+
+.rodape-info p:hover {
     cursor: pointer;
     color: white;
 }
-.icons{
+
+.icons {
     margin-left: 10px;
 }
-.icons i{
+
+.icons i {
     font-size: 3vmin;
     color: white;
     margin-right: 20px;
     transition: .4s ease;
 }
-.icons i:hover{
+
+.icons i:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 0.08em #ccc);
 }
-.line{
+
+.line {
     width: 96%;
     height: 1px;
     margin-top: 50px;
     margin-bottom: 0;
 }
-footer{
+
+footer {
     background-color: #1596DE;
     height: 70px;
 }
-.rodape{
+
+.rodape {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
