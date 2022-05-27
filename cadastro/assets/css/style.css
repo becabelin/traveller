@@ -1,112 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', 'sans-serif';
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+a {
+    color: #F0773D;
+    text-decoration: none;
 }
 
-/* editando imagem */
-.container{
+a:hover {
+    color: #F0773D;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
     width: 80%;
     height: 80vh;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0,0,0.212);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0.212);
     position: relative;
+    color: #f7f7f7;
 }
 
-.form-image{
-    width: 50%;
-    /* display: flex; */
-    justify-content: center;
+.form-image {
+    background-image: linear-gradient(0deg, rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)), url("../img/background.png");
+    width: 100%;
+    display: flex;
     align-items: center;
     position: relative;
 }
 
-.titleone{
-position: absolute;
-color:#fff;
-text-align: center;
-top: 200px;
-font-weight: 800;
-padding: 0 60px;
-left: 10px;
-font-size: 30px;
+.titleone {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 200px;
+    font-weight: 800;
+    padding: 0 60px;
+    left: 10px;
+    font-size: 30px;
 }
 
-.subtitleone{
-position: absolute;
-color:#fff;
-text-align: center;
-bottom: 200px;
-font-weight: 600;
-padding: 0 60px;
-left: 50px;
-font-size: 15px;
+.subtitleone {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 200px;
+    font-weight: 600;
+    padding: 0 60px;
+    left: 50px;
+    font-size: 15px;
 }
 
-.subtitletwo{
-position: absolute;
-color:#fff;
-text-align: center;
-bottom: 150px;
-font-weight: 10px;
-padding: 0 60px;
-left: 30px;
-font-size: 15px;
-} 
+.subtitletwo {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 150px;
+    font-weight: 10px;
+    padding: 0 60px;
+    left: 30px;
+    font-size: 15px;
+}
 
-
-.form-image img{
+.form-image img {
     width: 525px;
 }
 
-.form{
+.form {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-color: #f7f7f7;
     padding: 3rem;
 }
 
-
-
-.form-header{
+.form-header {
     margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     color: #F0773D;
 }
+
+
 /* fim da edição de imagem*/
+
 
 /* inicio da edição do form */
 
- .input-group{
+.input-group {
     display: block;
     justify-content: space-between;
     padding: 1rem 0;
 }
 
-.input-box{
+.input-box {
     display: block;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    
 }
 
-.input-box input{
+.input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     background-color: #1596DE;
@@ -116,20 +125,17 @@ font-size: 15px;
     font-weight: 200;
     position: relative;
     left: -50px;
-    
 }
 
-
-.input-box input:hover{
+.input-box input:hover {
     background-color: #F0773D;
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
     color: white;
-
 }
 
-.cadastro-button button{
+.cadastro-button button {
     width: 70%;
     border: none;
     background-color: #F0773D;
@@ -140,29 +146,28 @@ font-size: 15px;
     right: -50px;
 }
 
-.cadastro-button button:hover{
+.cadastro-button button:hover {
     background-color: #1596DE;
 }
 
-.cadastro-button button a{
+.cadastro-button button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 600;
     color: white;
 }
 
+
 /* reponsividade */
 
 @media screen and (max-width: 1330px) {
-    .form-image{
+    .form-image {
         display: none;
     }
-    .container{
+    .container {
         width: 50%;
     }
-    .form{
+    .form {
         width: 100%;
     }
-    
 }
-
