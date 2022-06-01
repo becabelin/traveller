@@ -39,7 +39,7 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #fff;
+    background: #F7F7F7;
 }
 
 #preloader:before {
@@ -95,13 +95,13 @@ h6 {
 
 .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: #F7F7F7;
     line-height: 0;
 }
 
 .back-to-top:hover {
     background: #F0773D;
-    color: #fff;
+    color: #F7F7F7;
 }
 
 .back-to-top.active {
@@ -151,7 +151,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #fff;
+    color: #F7F7F7;
     text-decoration: none;
 }
 
@@ -197,12 +197,12 @@ h6 {
     margin-left: 20px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #fff;
+    color: #F7F7F7;
     background: #F0773D;
 }
 
 .navbar .btn-cadastro:hover {
-    background: #fff;
+    background: #F7F7F7;
     color: #F0773D;
 }
 
@@ -216,12 +216,12 @@ h6 {
     margin-left: 20px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #fff;
-    border: #fff solid 1px;
+    color: #F7F7F7;
+    border: #F7F7F7 solid 1px;
 }
 
 .navbar .btn-login:hover {
-    background-color: #fff;
+    background-color: #F7F7F7;
     color: #F0773D;
 }
 
@@ -270,7 +270,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #fff;
+    color: #F7F7F7;
 }
 
 .navbar .dropdown ul {
@@ -283,7 +283,7 @@ h6 {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: #F7F7F7;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -345,7 +345,7 @@ h6 {
 */
 
 .mobile-nav-toggle {
-    color: #fff;
+    color: #F7F7F7;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -389,7 +389,7 @@ h6 {
     left: 15px;
     padding: 10px 0;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #F7F7F7;
     overflow-y: auto;
     transition: 0.3s;
 }
@@ -425,7 +425,7 @@ h6 {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: #fff;
+    background: #F7F7F7;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -516,14 +516,14 @@ h6 {
     border: none;
     height: 50px;
     background-color: #F0773D;
-    color: #fff;
+    color: #F7F7F7;
     width: 120px;
     border-radius: 50px;
     transition: 0.5s;
 }
 
 .search .btn-busca:hover {
-    background-color: #fff;
+    background-color: #F7F7F7;
     color: #F0773D;
     transition: 0.5s;
 }
@@ -747,12 +747,12 @@ section {
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #fff;
+    color: #F7F7F7;
     background: #F0773D;
 }
 
 .sobre .btn-cadastrar:hover {
-    background: #fff;
+    background: #F7F7F7;
     color: #F0773D;
 }
 
@@ -765,7 +765,7 @@ section {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: #ffffff;
+    background: #F7F7F7;
     transition: ease-in-out 0.3s;
 }
 
@@ -807,7 +807,7 @@ section {
     width: 100%;
     position: relative;
     text-align: center;
-    background: #fff;
+    background: #F7F7F7;
 }
 
 .counts .count-box i {
@@ -818,7 +818,7 @@ section {
     font-size: 20px;
     background: #F0773D;
     padding: 12px;
-    color: #fff;
+    color: #F7F7F7;
     border-radius: 50px;
     display: inline-flex;
     align-items: center;
@@ -891,8 +891,8 @@ section {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    border-right: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-right: 3px solid #F7F7F7;
+    border-bottom: 3px solid #F7F7F7;
 }
 
 .gallery .gallery-item img {
@@ -952,12 +952,12 @@ section {
 .contato .info .address:hover i,
 .contato .info .phone:hover i {
     background: #F0773D;
-    color: #fff;
+    color: #F7F7F7;
 }
 
 .contato .php-email-form {
     width: 100%;
-    background: #fff;
+    background: #F7F7F7;
 }
 
 .contato .php-email-form .form-group {
@@ -966,7 +966,7 @@ section {
 
 .contato .php-email-form .error-message {
     display: none;
-    color: #fff;
+    color: #F7F7F7;
     background: #F0773D;
     text-align: left;
     padding: 15px;
@@ -979,7 +979,7 @@ section {
 
 .contato .php-email-form .sent-message {
     display: none;
-    color: #fff;
+    color: #F7F7F7;
     background: #F0773D;
     text-align: center;
     padding: 15px;
@@ -988,7 +988,7 @@ section {
 
 .contato .php-email-form .loading {
     display: none;
-    background: #fff;
+    background: #F7F7F7;
     text-align: center;
     padding: 15px;
 }
@@ -1025,13 +1025,13 @@ section {
     background: #F0773D;
     border: 0;
     padding: 10px 30px;
-    color: #fff;
+    color: #F7F7F7;
     transition: 0.4s;
     border-radius: 50px;
 }
 
 .contato .php-email-form button[type=submit]:hover {
-    background: #ffffff;
+    background: #F7F7F7;
     color: #F0773D;
     border: #F0773D 0.5px solid;
 }
@@ -1153,11 +1153,11 @@ section {
 .services .service-box:hover h3,
 .services .service-box:hover p,
 .services .service-box:hover .read-more {
-    color: #fff;
+    color: #F7F7F7;
 }
 
 .services .service-box:hover .icon {
-    background: #fff;
+    background: #F7F7F7;
 }
 
 @media (max-width: 768px) {
@@ -1278,7 +1278,7 @@ section {
 }
 
 .footer p {
-    color: #ffffff;
+    color: #F7F7F7;
     transition: .4s;
     text-align: left;
 }

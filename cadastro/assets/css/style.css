@@ -45,7 +45,7 @@ h6 {
 
 .titleone {
     position: absolute;
-    color: #fff;
+    color: #F7F7F7;
     text-align: center;
     top: 200px;
     font-weight: 800;
@@ -56,7 +56,7 @@ h6 {
 
 .subtitleone {
     position: absolute;
-    color: #fff;
+    color: #F7F7F7;
     text-align: center;
     bottom: 200px;
     font-weight: 600;
@@ -67,7 +67,7 @@ h6 {
 
 .subtitletwo {
     position: absolute;
-    color: #fff;
+    color: #F7F7F7;
     text-align: center;
     bottom: 150px;
     font-weight: 10px;
