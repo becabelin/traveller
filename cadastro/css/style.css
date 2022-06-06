@@ -34,82 +34,100 @@ h6 {
 
 .main-container {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.3)), url("../img/background.webp") no-repeat;
+}
+
+.left {
+    display: flex;
+    width: 45%;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.3)), url("../img/background.png") no-repeat;
     background-size: cover;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.login-box {
+.welcome {
+    color: #fff;
+    text-align: center;
+}
+.divider {
+    width: 100px;
+    border-top: 5px solid #F0773D;
+    opacity: 1;
+}
+
+.rigth {
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    max-width: 500px;
-    height: 350px;
-    background-color: #1596DE;
+}
+
+@media (max-width: 1000px)
+{
+  .rigth
+   {
+    width: 100%;
+   }
+   .left {
+       display: none;
+   }
+}
+
+.rigth-divider {
+    border-top: 1px solid #000;
+    height: 1px;
+    overflow: visible;
+    text-align: center;
+    width: 350px;
+    opacity: 1;
+  }
+
+.rigth-divider::after {
+    content: "Vamos começar?";
+    display: inline-block;
     position: relative;
-}
-
-.login-image {
-    position: absolute;
-    top: -50px;
-}
-
-.check {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.form-check-label {
-    color: #F7F7F7;
-}
-
-.forgot-password a {
-    color: #F7F7F7;
-    text-decoration: none;
-}
-
-.login-area {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.login-button {
-    position: absolute;
-    width: 250px;
-    background-color: #f0773d;
-    border-radius: 50px;
-    color: #F7F7F7;
-    right: -125px;
-    bottom: -20px;
-}
-
-.signup {
-    display: flex;
-    margin-top: 25px;
-}
-
-.signup p,
-a {
-    color: #F7F7F7;
-    text-decoration: none;
-    margin-left: 5px;
-    padding-top: 10px;
+    top: -0.7em;
+    padding: 0 0.3em;
+    background: #f7f7f7;
+  }
+.cadastro-button {
+    background-color: #F0773D;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 .form-control {
     width: 100%;
     padding: 10px;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.social-button {
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50%;
 }
 
 .rodape-info {
