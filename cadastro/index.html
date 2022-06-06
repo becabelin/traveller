@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Cadastro</title>
+    <title>Login</title>
     <meta content="O Projeto Traveller é dedicado a viajantes que queiram conhecer os mais diversos lugares do mundo" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Ícones -->
-    <link href="/assets/img/logo.webp" rel="icon" />
-    <link href="/assets/img/mobile.webp" rel="mobile-icon" />
+    <link href="../assets/img/logo.webp" rel="icon" />
+    <link href="../assets/img/mobile.webp" rel="mobile-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,71 +20,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- CSS principal -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <div class="container">
-
-        <div class="form-image ">
-            <div data-aos="zoom-out">
-                <h1>Planeje a sua viagem</h1>
-                <h2>Excursões para o Brasil inteiro!</h2>
+    <div class="main-container">
+        <div class="login-box">
+            <div class="login-image">
+                <img src="./img/login-image.webp" width="120" />
             </div>
-            <div class="title-one">Seja Bem Vindo ao Traveller</div>
-            <div class="subtitle-one">Somos o maior blog de viagens do Brasil.</div>
-            <div class="subsubtitle-two">
-                Faça seu cadastro e venha planejar sua viagem com Traveller.
+            <div class="mb-3 row" style="width: 80%;">
+                <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder='E-mail'>
+            </div>
+            <div class="mb-3 row" style="width: 80%;">
+                <input type="password" class="form-control" id="inputPassword"  placeholder='Senha'>
+            </div>
+            <div class="check">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+              Lembre de mim
+            </label>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
             </div>
         </div>
-        <!-- cadastro -->
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Crie uma conta</h1>
-                    </div>
-                    <!-- icones redes sociais -->
-                    <!-- <div class="icons-rede-sociais">
-                        <img src="assets/img/facebook.png" alt="icone na cor azul da rede social facebook">
-                        <img src="assets/img/instagram.png" alt="Icone na cor azul da rede social instagram">
-                        <img src="assets/img/linkedin.png" alt="icone na cor azul da rede social linkedin">
-                    </div> -->
+        <div class="login-area">
+            <button class="login-button btn" type="button">Login</button>
+
+        </div>
+        <div class="signup">
+            <p>Ainda não possui cadastro?</p> <a href="#">Cadastre-se</a>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid rodape-info">
+        <div class="row d-flex py-5 text-white">
+            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2 ml-2">
+                <h2>Traveller</h2>
+                <p class="mb-5">Seu guia de viagens online</p>
+                <div class="icons">
+                    <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
                 </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="name"></label>
-                        <input id="name" type="text" placeholder="Usuário" required />
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email"></label>
-                        <input id="email" type="email" placeholder="Email" required />
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password"></label>
-                        <input id="password" type="password" placeholder="Senha" required />
-                    </div>
-                </div>
-
-                <div class="cadastro-button">
-                    <button><a href="#">Cadastre-se</a></button>
-                </div>
-            </form>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
+                <h5 class="mb-5">Support</h5>
+                <p>Help Center</p>
+                <p>Safety information</p>
+                <p>Cancellation options</p>
+                <p>Report Complaint</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
+                <h5 class="mb-5">Community</h5>
+                <p>Nature Community</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
+                <h5 class="mb-5">About</h5>
+                <p>Newsletter</p>
+                <p>Learn about new features</p>
+                <p>Careers</p>
+                <p>Blog</p>
+            </div>
+            <div class="line bg-light"></div>
         </div>
     </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 rodape text-white">
+                    <p>© 2022 Traveller, Inc.</p>
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Sitemap</p>
+                </div>
+                <div class="col-lg-7">
+                </div>
+            </div>
+    </footer>
 </body>
 
 </html>
