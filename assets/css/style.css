@@ -758,42 +758,6 @@ section {
 
 
 /*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-
-.features .icon-box {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background: #F7F7F7;
-    transition: ease-in-out 0.3s;
-}
-
-.features .icon-box i {
-    font-size: 32px;
-    padding-right: 10px;
-    line-height: 1;
-}
-
-.features .icon-box h3 {
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-size: 16px;
-}
-
-.features .icon-box h3 a {
-    color: #F0773D;
-    transition: ease-in-out 0.3s;
-}
-
-.features .icon-box h3 a:hover {
-    color: #464646;
-}
-
-
-/*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 
@@ -1292,4 +1256,45 @@ section {
 .footer .col p {
     text-align: left;
     padding-top: 10px;
+}
+
+
+/* Hero Carousel */
+
+.carousel-indicators li {
+    background-color: #1596DE !important;
+}
+
+#carousel .carousel-control-next i,
+#carousel .carousel-control-prev i {
+    color: #1596DE !important;
+    font-size: 2.8em !important;
+}
+
+.carousel-item {
+    height: 26rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel .img-fluid {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1596DE;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
 }
