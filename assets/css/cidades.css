@@ -220,7 +220,7 @@
     color: #F0773D;
 }
 
-.sobre .btn-pontos-turisticos {
+.sobre .btn-carousel {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -235,7 +235,7 @@
     box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.08);
 }
 
-.sobre .btn-pontos-turisticos:hover {
+.sobre .btn-carousel:hover {
     background: #F7F7F7;
     color: #F0773D;
 }
@@ -244,6 +244,10 @@
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+
+.features {
+    margin-bottom: -100px;
+}
 
 .features .feture-tabs {
     margin-top: -20px;
@@ -351,6 +355,8 @@
 
 .portfolio .portfolio-wrap img {
     transition: 1s;
+    height: 30vh;
+    width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -421,12 +427,13 @@
     color: #F7F7F7;
     background: #1596DE;
     margin: 10px 2px;
-    width: 36px;
+    width: auto;
+    padding: 10px 20px;
     height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 20px;
     transition: 0.3s;
 }
 
@@ -534,7 +541,7 @@
 
 
 /*--------------------------------------------------------------
-  # Carousel
+  #Pontos Turísticos
 --------------------------------------------------------------*/
 
 .carousel-indicators li {
