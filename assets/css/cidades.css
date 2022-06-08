@@ -197,6 +197,69 @@
 
 
 /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    min-height: 40px;
+    margin-top: 80px;
+    margin-bottom: -60px;
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs {
+        margin-top: 64px;
+    }
+}
+
+.breadcrumbs h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs h2 {
+        margin: 0 0 10px 0;
+    }
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+
+/*--------------------------------------------------------------
 # Sobre
 --------------------------------------------------------------*/
 
@@ -477,14 +540,6 @@
   # Portfolio Details
   --------------------------------------------------------------*/
 
-.portfolio-details {
-    padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-    width: 100%;
-}
-
 .portfolio-details .portfolio-details-slider .swiper-pagination {
     margin-top: 20px;
     position: relative;
@@ -504,6 +559,7 @@
 
 .portfolio-details .portfolio-info {
     padding: 30px;
+    margin-bottom: 30px;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
@@ -525,8 +581,13 @@
     margin-top: 10px;
 }
 
+.portfolio-details .portfolio-info td {
+    width: 70%;
+    padding: 2px 0px;
+}
+
 .portfolio-details .portfolio-description {
-    padding-top: 30px;
+    margin-top: -220px;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -537,6 +598,24 @@
 
 .portfolio-details .portfolio-description p {
     padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-details .portfolio-description {
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 982px) {
+    .portfolio-details .portfolio-description {
+        margin-top: -450px
+    }
+}
+
+@media (min-width: 1080px) {
+    .portfolio-details .portfolio-description {
+        margin-top: -220px
+    }
 }
 
 
