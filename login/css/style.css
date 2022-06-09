@@ -37,7 +37,7 @@ h6 {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.3)), url("../img/background.webp") no-repeat;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)), url("../img/background.webp") no-repeat;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -48,16 +48,17 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    height: 350px;
+    height: auto;
     background-color: #1596DE;
     position: relative;
+    border-radius: 30px;
+    margin-bottom: -60px;
 }
 
 .login-image {
-    position: absolute;
-    top: -50px;
+    margin: -60px 0px;
 }
 
 .check {
@@ -83,26 +84,46 @@ h6 {
 }
 
 .login-button {
-    position: absolute;
-    width: 250px;
-    background-color: #f0773d;
+    margin: 20px;
+    background-color: #F0773D;
     border-radius: 50px;
     color: #F7F7F7;
-    right: -125px;
-    bottom: -20px;
+    padding: 8px 120px;
+    border: none;
+    transition: 0.5s;
+}
+
+.login-button:hover {
+    background-color: #F7F7F7;
+    color: #F0773D;
+    border: #F7F7F7;
+}
+
+h2 {
+    color: #F7F7F7;
+    padding: 10px 0px;
 }
 
 .signup {
     display: flex;
-    margin-top: 25px;
 }
 
-.signup p,
-a {
+.signup p {
     color: #F7F7F7;
+    font-size: 15px;
+}
+
+.signup a {
+    color: #F7F7F7;
+    font-size: 15px;
     text-decoration: none;
     margin-left: 5px;
-    padding-top: 10px;
+    font-weight: 500;
+}
+
+.signup a:hover {
+    color: #F7F7F7;
+    text-decoration: underline;
 }
 
 .form-control {
@@ -120,12 +141,13 @@ a {
 }
 
 .social-button {
-    padding: 5px 0;
-    background-color: #fff;
+    padding: 6px 10px;
+    margin: 5px 5px;
+    background-color: #F7F7F7;
     border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 20px;
     width: 50%;
+    height: auto;
 }
 
 .rodape-info {
@@ -139,7 +161,7 @@ a {
 
 .rodape-info p:hover {
     cursor: pointer;
-    color: white;
+    color: #F7F7F7;
 }
 
 .icons {
@@ -148,7 +170,7 @@ a {
 
 .icons i {
     font-size: 3vmin;
-    color: white;
+    color: #F7F7F7;
     margin-right: 20px;
     transition: .4s ease;
 }
@@ -163,16 +185,4 @@ a {
     height: 1px;
     margin-top: 50px;
     margin-bottom: 0;
-}
-
-footer {
-    background-color: #1596DE;
-    height: 70px;
-}
-
-.rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }

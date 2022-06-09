@@ -30,92 +30,137 @@
 
     <!-- CSS principal -->
     <link href="./css/style.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-fill">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <h1>
+                    <a href="/index.html"><span>Traveller</span></a>
+                </h1>
+            </div>
+
+            <!-- Navbar -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="/index.html">Voltar para o início</a></li>
+                    <li><a class="btn-cadastro scrollto" href="/login/index.html">Login</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
 
     <div class="main-container">
-       <div class="left container">
-           <h2 class="welcome">Seja bem vindo ao <br /> Traveller</h2>
-           <hr class="divider" />
-           <p class="welcome">Somos o maior blog de viagens do Brasil!</p>
-           <p class="welcome">Faça seu cadastro e venha planejar sua <br /> viagem com Traveller!</p>
-       </div>
-       <div class="rigth container">
-        <div class="mt-5">
-            <h2 style="color: #F0773D;">Crie sua conta</h2>
+
+        <div class="left container">
+            <h2 class="welcome">Seja bem vindo ao</h2>
+            <h2 class="welcome"> Traveller</h2>
+            <hr class="divider" />
+            <p class="welcome">Somos o maior blog de viagens do Brasil!</p>
+            <p class="welcome">Faça seu cadastro e venha planejar sua viagem com Traveller!</p>
         </div>
-        <p>e planeje a viagem dos seus sonhos com o Traveller</p>
-        <div class="row">
-            <hr class="rigth-divider" />
-        </div>
-        <div class="social">
-            <button class="social-button">
-                <img src="../assets/img/google.png" width="80"/>
+
+        <div class="right container">
+            <div class="mt-5">
+                <h2>Crie sua conta</h2>
+            </div>
+            <p>e planeje a viagem dos seus sonhos com o Traveller</p>
+            <div class="row divider-div">
+                <hr class="right-divider" />
+            </div>
+
+            <div class="social">
+                <button class="social-button">
+                <img src="../assets/img/google.webp" width="90"/>
             </button>
-            <button class="social-button">
-                <img src="../assets/img/facebook.png" width="80" />
+                <button class="social-button">
+                <img src="../assets/img/facebook.webp" width="100" />
             </button>
+            </div>
+
+            <div class="mb-3 row" style="width: 80%;">
+                <input type="email" class="form-control" placeholder='E-mail'>
+            </div>
+            <div class="mb-3 row" style="width: 80%;">
+                <input type="password" class="form-control" placeholder='Senha'>
+            </div>
+            <div class="mb-3 row" style="width: 80%;">
+                <input type="password" class="form-control" placeholder='Confirme sua senha'>
+            </div>
+
+            <button class="cadastro-button">Cadastre-se</button>
+
+            <div class="signin">
+                <p>Já é cadastrado?<a href="/login/index.html">Faça login</a></p>
+            </div>
+
         </div>
-        <div class="mb-3 row" style="width: 80%;">
-            <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder='E-mail'>
-        </div>
-        <div class="mb-3 row" style="width: 80%;">
-            <input type="password" class="form-control" id="inputPassword"  placeholder='Senha'>
-        </div>
-        <div class="mb-3 row" style="width: 80%;">
-            <input type="password" class="form-control" id="inputPassword"  placeholder='Confirme sua senha'>
-        </div>
-        <button class="cadastro-button">Cadastre-se</button>
-       </div>
 
     </div>
-    <!-- Footer -->
-    <div class="container-fluid rodape-info">
-        <div class="row d-flex py-5 text-white">
-            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2 ml-2">
-                <h2>Traveller</h2>
-                <p class="mb-5">Seu guia de viagens online</p>
-                <div class="icons">
-                    <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                    <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-                    <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row d-flex py-4 text-white">
+
+                <div class="col-lg-3 col-sm-6 col-6 text-left mt-2 ml-2">
+                    <h2 style="color: #F7F7F7;">Traveller</h2>
+                    <p>Seu guia de viagens online</p>
+                    <div class="icons">
+                        <a href=""><i class="fab fa-facebook-f" ></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
+                    <h5>Suporte</h5>
+                    <p>Central de Ajuda</p>
+                    <p>Entre em contato</p>
+                    <p>Faça uma denúncia</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
+                    <h5>Comunidade</h5>
+                    <p>Quem é Traveller</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
+                    <h5>Sobre</h5>
+                    <p>Newsletter</p>
+                    <p>Carreiras</p>
+                    <p>Blog</p>
+                </div>
+
+                <div class="line bg-light"></div>
+
+                <div class="row text-white">
+                    <div class="col">
+                        <p>© 2022 Traveller, Inc.</p>
+                    </div>
+                    <div class="col">
+                        <p>Privacidade</p>
+                    </div>
+                    <div class="col">
+                        <p>Termos</p>
+                    </div>
+                    <div class="col">
+                        <p>Mapa do site</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
-                <h5 class="mb-5">Support</h5>
-                <p>Help Center</p>
-                <p>Safety information</p>
-                <p>Cancellation options</p>
-                <p>Report Complaint</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
-                <h5 class="mb-5">Community</h5>
-                <p>Nature Community</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 text-left mt-2">
-                <h5 class="mb-5">About</h5>
-                <p>Newsletter</p>
-                <p>Learn about new features</p>
-                <p>Careers</p>
-                <p>Blog</p>
-            </div>
-            <div class="line bg-light"></div>
+
         </div>
-    </div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-5 rodape text-white">
-                    <p>© 2022 Traveller, Inc.</p>
-                    <p>Privacy</p>
-                    <p>Terms</p>
-                    <p>Sitemap</p>
-                </div>
-                <div class="col-lg-7">
-                </div>
-            </div>
+
     </footer>
+    <!-- End Footer -->
+
 </body>
 
 </html>

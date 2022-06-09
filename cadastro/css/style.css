@@ -38,10 +38,15 @@ h6 {
     height: 100vh;
 }
 
+h2 {
+    color: #F0773D;
+    font-weight: 600;
+}
+
 .left {
     display: flex;
     width: 45%;
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.3)), url("../img/background.png") no-repeat;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url("../img/background.webp") no-repeat;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -49,16 +54,18 @@ h6 {
 }
 
 .welcome {
-    color: #fff;
+    color: #F7F7F7;
     text-align: center;
+    width: 50%;
 }
+
 .divider {
-    width: 100px;
-    border-top: 5px solid #F0773D;
+    width: 50%;
+    border-top: 4px solid #F0773D;
     opacity: 1;
 }
 
-.rigth {
+.right {
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -66,50 +73,85 @@ h6 {
     justify-content: center;
 }
 
-@media (max-width: 1000px)
-{
-  .rigth
-   {
-    width: 100%;
-   }
-   .left {
-       display: none;
-   }
+@media (max-width: 1000px) {
+    .right {
+        width: 100%;
+    }
+    .left {
+        display: none;
+    }
 }
 
-.rigth-divider {
-    border-top: 1px solid #000;
+.signin {
+    width: auto;
+}
+
+.signin p {
+    color: #111;
+    font-size: 14px;
+}
+
+.signin a {
+    color: #F0773D;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.signin a:hover {
+    color: #1596DE;
+    transition: 0.5s;
+}
+
+.divider-div {
+    padding-top: 10px;
+}
+
+.right-divider {
+    border-top: 1px solid #444444;
     height: 1px;
     overflow: visible;
     text-align: center;
-    width: 350px;
+    width: 500px;
     opacity: 1;
-  }
+}
 
-.rigth-divider::after {
+.right-divider::after {
     content: "Vamos começar?";
     display: inline-block;
     position: relative;
     top: -0.7em;
-    padding: 0 0.3em;
-    background: #f7f7f7;
-  }
+    padding: 0 0.7em;
+    font-size: 16px;
+    background: #F7F7F7;
+}
+
 .cadastro-button {
+    margin: 20px;
     background-color: #F0773D;
+    border-radius: 50px;
+    color: #F7F7F7;
+    padding: 8px 120px;
     border: none;
-    color: #fff;
-    padding: 5px;
-    width: 200px;
-    border-radius: 20px;
-    margin-top: 20px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.1);
+}
+
+.cadastro-button:hover {
+    transition: 0.5s;
+    background-color: #F7F7F7;
+    color: #F0773D;
+    border: #F7F7F7;
 }
 
 .form-control {
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid rgb(162, 162, 162);
+    background-color: #F7F7F7;
     margin-top: 10px;
 }
 
@@ -123,58 +165,9 @@ h6 {
 
 .social-button {
     padding: 5px 0;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
+    background-color: #F7F7F7;
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 20px;
     margin-right: 10px;
     width: 50%;
-}
-
-.rodape-info {
-    background-color: #1596DE;
-}
-
-.rodape-info p {
-    color: #e1e1e1;
-    transition: .4s;
-}
-
-.rodape-info p:hover {
-    cursor: pointer;
-    color: white;
-}
-
-.icons {
-    margin-left: 10px;
-}
-
-.icons i {
-    font-size: 3vmin;
-    color: white;
-    margin-right: 20px;
-    transition: .4s ease;
-}
-
-.icons i:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 0.08em #ccc);
-}
-
-.line {
-    width: 96%;
-    height: 1px;
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
-footer {
-    background-color: #1596DE;
-    height: 70px;
-}
-
-.rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
