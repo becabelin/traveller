@@ -582,7 +582,7 @@
 }
 
 .portfolio-details .portfolio-info td {
-    width: 70%;
+    width: 65%;
     padding: 2px 0px;
 }
 
@@ -620,7 +620,24 @@
 
 
 /*--------------------------------------------------------------
-  #Pontos Turísticos
+  # Avaliações
+--------------------------------------------------------------*/
+
+.portfolio-info .avaliacao {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.portfolio-info .avaliacao .media {
+    font-size: 15px;
+    margin-left: 3px;
+    padding-bottom: 3px;
+}
+
+
+/*--------------------------------------------------------------
+  # Pontos Turísticos
 --------------------------------------------------------------*/
 
 .carousel-indicators li {

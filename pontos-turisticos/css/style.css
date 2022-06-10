@@ -21,19 +21,19 @@
     margin-bottom: 100px;
 }
 
-main .avaliacao {
+.avaliacao {
     display: flex;
     flex-direction: row;
     margin: 15px 0;
 }
 
-main .avaliacao .media {
+.avaliacao .media {
     font-size: 15px;
     margin-left: 3px;
     padding-bottom: 3px;
 }
 
-main .goToWebsite {
+.goToWebsite {
     background-color: #F0773D;
     border-radius: 22px;
     padding: 14px 10px;
@@ -166,7 +166,7 @@ main .goToWebsite {
     .btn-sign {
         font-size: 1vmin;
     }
-    main .goToWebsite {
+    .goToWebsite {
         width: 300px;
         font-size: 3vmin;
     }
