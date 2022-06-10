@@ -614,8 +614,100 @@
 
 @media (min-width: 1080px) {
     .portfolio-details .portfolio-description {
-        margin-top: -220px
+        margin-top: -200px
     }
+}
+
+
+/*--------------------------------------------------------------
+  # Comments
+--------------------------------------------------------------*/
+
+.comments {
+    margin-top: -160px;
+}
+
+.comments .row {
+    margin-bottom: 10px;
+}
+
+.small {
+    margin-bottom: 0px;
+}
+
+.card-body .avaliacao {
+    margin: 5px 0px;
+}
+
+.card-body p {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.form-outline {
+    position: relative;
+}
+
+.form-outline .form-control {
+    min-height: auto;
+    padding: 0.33em 0.75em;
+    border: 0;
+    background: transparent;
+    transition: all .2s linear;
+    border: 1px solid rgba(0, 0, 0, .25)
+}
+
+.form-outline .form-control~.form-label {
+    position: absolute;
+    top: 0;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    left: 0.75rem;
+    padding-top: 0.37rem;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: all .2s ease-out;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 0;
+}
+
+.form-outline .form-control~.form-notch {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: left;
+    pointer-events: none;
+}
+
+.card {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.5rem;
+}
+
+.btn-success {
+    width: 100%;
+}
+
+.link-muted {
+    color: #aaa;
+}
+
+.link-muted:hover {
+    color: #1266f1;
 }
 
 
@@ -633,6 +725,24 @@
     font-size: 15px;
     margin-left: 3px;
     padding-bottom: 3px;
+}
+
+.stars {
+    margin-right: 20px;
+}
+
+.rating {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.rating li {
+    list-style: none;
+}
+
+.rating i {
+    padding: 0.25rem;
 }
 
 
