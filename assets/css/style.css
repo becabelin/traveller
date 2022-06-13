@@ -328,6 +328,38 @@ h6 {
     .navbar ul {
         display: none;
     }
+
+    .navbar .btn-cadastro {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 5px 20px;
+        margin-left: 20px;
+        border-radius: 50px;
+        transition: 0.5s;
+        color: #F7F7F7;
+        background: #F0773D;
+    }
+    
+    .navbar .btn-cadastro:hover {
+        background: #F7F7F7;
+        color: #F0773D;
+    }
+    
+    .navbar .btn-login {
+
+        color: #F0773D;
+        border: #F0773D solid 1px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .navbar .btn-login:hover {
+        background-color: #F0773D;
+        color: #F7F7F7;
+    }
 }
 
 .navbar-mobile {
