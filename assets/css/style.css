@@ -445,10 +445,13 @@ h6 {
 }
 
 #hero h2 {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 40px;
-    font-size: 24px;
     text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
 }
 
 ::placeholder {
