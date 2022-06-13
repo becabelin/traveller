@@ -25,7 +25,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #F7F7F7;
+    color: #f7f7f7;
 }
 
 #hero h2 {
@@ -44,14 +44,14 @@
     margin: 10px;
     font-size: 40px;
     font-weight: 700;
-    color: #F7F7F7;
+    color: #f7f7f7;
     text-align: center;
 }
 
 #hero p {
     font-size: 16px;
     font-weight: 300;
-    color: #F7F7F7;
+    color: #f7f7f7;
     text-align: center;
 }
 
@@ -65,15 +65,18 @@
     #hero {
         height: 100vh;
     }
+
     #hero h1 {
         font-size: 28px;
         line-height: 36px;
     }
+
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
     }
+
     #hero .hero-container {
         padding: 0 15px;
     }
@@ -84,7 +87,6 @@
         height: 120vh;
     }
 }
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -119,7 +121,7 @@
 
 .testimonials .testimonial-item {
     text-align: center;
-    color: #F7F7F7;
+    color: #f7f7f7;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -133,7 +135,7 @@
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 5px 0;
-    color: #F7F7F7;
+    color: #f7f7f7;
 }
 
 .testimonials .testimonial-item h4 {
@@ -195,14 +197,13 @@
     }
 }
 
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 
 .breadcrumbs {
     padding: 20px 0;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     min-height: 40px;
     margin-top: 80px;
     margin-bottom: -60px;
@@ -250,14 +251,15 @@
     .breadcrumbs .d-flex {
         display: block !important;
     }
+
     .breadcrumbs ol {
         display: block;
     }
+
     .breadcrumbs ol li {
         display: inline-block;
     }
 }
-
 
 /*--------------------------------------------------------------
 # Sobre
@@ -273,7 +275,7 @@
 .sobre h3,
 .text {
     width: 90%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .sobre h3 {
@@ -292,24 +294,23 @@
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #F7F7F7;
+    color: #f7f7f7;
     background: #F0773D;
     margin-top: 10px;
     box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.08);
 }
 
 .sobre .btn-carousel:hover {
-    background: #F7F7F7;
+    background: #f7f7f7;
     color: #F0773D;
 }
-
 
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 
 .features {
-    margin-bottom: -100px;
+    margin-bottom: -90px;
 }
 
 .features .feture-tabs {
@@ -352,10 +353,33 @@
 }
 
 .features .img-fluid {
-    height: 500px;
-    margin-top: -50px;
+    height: auto;
+    margin-top: -80px;
+    width: 100%;
 }
 
+.features .tab-pane p {
+    width: 80%;
+}
+
+.features .btn-features {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #f7f7f7;
+    background: #1596DE;
+    margin-top: 20px;
+}
+
+.features .btn-features:hover {
+    background: #f7f7f7;
+    color: #1596DE;
+}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -366,7 +390,7 @@
     margin: 0 auto 25px auto;
     list-style: none;
     text-align: center;
-    background: #F7F7F7;
+    background: #f7f7f7;
     border-radius: 50px;
     padding: 2px 15px;
 }
@@ -382,7 +406,7 @@
     margin: 0 4px 8px 4px;
     transition: 0.3s;
     border-radius: 50px;
-    border: 1px solid #F7F7F7;
+    border: 1px solid #f7f7f7;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -487,7 +511,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-    color: #F7F7F7;
+    color: #f7f7f7;
     background: #1596DE;
     margin: 10px 2px;
     width: auto;
@@ -535,20 +559,20 @@
     right: 15px;
 }
 
-
 /*--------------------------------------------------------------
   # Portfolio Details
   --------------------------------------------------------------*/
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
     margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     opacity: 1;
     border: 1px solid #1596DE;
 }
@@ -587,7 +611,7 @@
 }
 
 .portfolio-details .portfolio-description {
-    margin-top: -220px;
+    margin-top: auto;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -608,16 +632,15 @@
 
 @media (min-width: 982px) {
     .portfolio-details .portfolio-description {
-        margin-top: -450px
+        margin-top: -360px;
     }
 }
 
 @media (min-width: 1080px) {
     .portfolio-details .portfolio-description {
-        margin-top: -200px
+        margin-top: -160px;
     }
 }
-
 
 /*--------------------------------------------------------------
   # Comments
@@ -625,6 +648,7 @@
 
 .comments {
     margin-top: -200px;
+    margin-bottom: -80px;
 }
 
 .comments .row {
@@ -640,8 +664,8 @@
     padding: 0.33em 0.75em;
     border: 0;
     background: transparent;
-    transition: all .2s linear;
-    border: 1px solid rgba(0, 0, 0, .25)
+    transition: all 0.2s linear;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .form-outline .form-control~.form-label {
@@ -655,8 +679,8 @@
     padding-top: 0.37rem;
     pointer-events: none;
     transform-origin: 0 0;
-    transition: all .2s ease-out;
-    color: rgba(0, 0, 0, .6);
+    transition: all 0.2s ease-out;
+    color: rgba(0, 0, 0, 0.6);
     margin-bottom: 0;
     font-size: 14px;
 }
@@ -687,7 +711,7 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.5rem;
 }
 
@@ -731,7 +755,6 @@
     color: #1266f1;
 }
 
-
 /*--------------------------------------------------------------
   # Avaliações
 --------------------------------------------------------------*/
@@ -766,7 +789,6 @@
     padding: 0.25rem;
 }
 
-
 /*--------------------------------------------------------------
   # Pontos Turísticos
 --------------------------------------------------------------*/
@@ -782,7 +804,7 @@
 }
 
 .carousel-item {
-    height: 26rem;
+    height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -805,6 +827,28 @@
     justify-content: center;
     color: #1596DE;
     text-align: center;
-    opacity: .5;
-    transition: opacity .15s ease;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+.carousel .text-align-left {
+    margin-left: 60px;
+    width: 90%;
+}
+
+.carousel .h1 {
+    color: #111;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.carousel .h2 {
+    color: #111;
+    font-size: 1.5em;
+    margin: 10px 0px;
+}
+
+.carousel .row {
+    margin-bottom: 60px;
 }
