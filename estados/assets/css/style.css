@@ -1,53 +1,40 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-* {
-    margin: 0 auto;
-    padding: 0 auto;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif, 'Times New Roman', Times, serif;
-    text-decoration: none;
-}
-
-*::selection {
-    background: #1e1e1e;
-    color: #cae0f0;
-    border-radius: 22px;
-    text-decoration: none;
-}
-
-.carousel-item img {
-    border-radius: 10px;
-    height: 600px;
-}
-
-.container-edit {
-    width: 90%;
-    margin-bottom: 100px;
-}
-
-a,
-a:hover {
-    text-decoration: none !important;
+.primeiro-carrossel,
+.sul-e-sudeste,
+.centro-oeste-e-norte {
+    padding: 30px 0px;
 }
 
 /*--------------------------------------------------------------
   # Estados
 --------------------------------------------------------------*/
 
-.goToWebsite {
-    background-color: #F0773D;
-    border-radius: 22px;
-    padding: 14px 10px;
-    width: 32vmin;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 2.5vmin;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    box-shadow: 0 0 0.5em #ccc;
+.estados {
+    margin-bottom: -60px;
+}
+
+.btn-ver-pacotes {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 0px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #F7F7F7;
+    background: #F0773D;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-ver-pacotes:hover {
+    background: #F7F7F7;
+    color: #F0773D;
+}
+
+.local-name {
+    font-size: 32px;
 }
 
 .maybe-like-it {
@@ -62,16 +49,18 @@ a:hover {
 
 .card {
     width: 300px;
-    height: 360px;
+    height: auto;
     margin: 60px auto 30px;
     color: #1e1e1e;
     text-decoration: none;
     transition: .5s ease;
+    border-radius: 10px !important;
 }
 
 .card img {
     width: 300px;
     height: 200px;
+    border-radius: 10px 10px 0px 0px !important;
 }
 
 .card:hover {
@@ -82,7 +71,9 @@ a:hover {
 
 .card h5 {
     margin-top: 20px;
-    font-size: 4vmin;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .card h5 p {
@@ -94,7 +85,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .card .tags p {
@@ -113,13 +104,29 @@ a:hover {
     margin: 30px auto;
 }
 
+.carousel-item img {
+    border-radius: 20px;
+}
+
+.col {
+    margin-bottom: 60px;
+}
+
+.d-flex {
+    margin-bottom: -20px;
+}
+
+/*--------------------------------------------------------------
+  # Owl
+--------------------------------------------------------------*/
+
 .owl-prev,
 .owl-next {
     width: 50px;
     height: 50px;
     position: relative;
     background: none !important;
-    color: #1e1e1e;
+    color: #F0773D;
 }
 
 .owl-prev::before,
@@ -130,15 +137,15 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ccc;
+    background: #F0773D;
     border-radius: 50% !important;
     line-height: 50px;
-    transition: .4s;
+    transition: 0.5ms;
 }
 
 .owl-prev:hover::before,
 .owl-next:hover::before {
-    background: #9c9e9e;
+    background: #1596DE;
 }
 
 .owl-prev::after,
@@ -148,7 +155,7 @@ a:hover {
     height: 18px;
     position: absolute;
     transform: rotate(135deg);
-    border: solid #1e1e1e;
+    border: solid #F7F7F7;
     border-width: 0 3px 3px 0;
     top: 50%;
     left: 50%;
@@ -159,6 +166,31 @@ a:hover {
 .owl-next::after {
     transform: rotate(-45deg);
     margin-left: -14px;
+}
+
+.owl-dot span {
+    background: #ffd4c0 !important;
+}
+
+.owl-dot.active span {
+    background: #F0773D !important;
+}
+
+.owl-dot span:hover {
+    background: #F0773D !important;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.col-lg-12 {
+    margin: -90px 0px 0px 0px !important;
+}
+
+.col h2 {
+    font-size: 36px;
 }
 
 /*--------------------------------------------------------------

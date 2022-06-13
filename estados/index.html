@@ -45,7 +45,7 @@
 
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-fill">
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="logo">
                 <h1>
@@ -81,17 +81,35 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= Section Estados ======= -->
-    <section class="estados">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
         <div class="container">
-            <div class="row d-flex text-center my-5 ">
-                <div class="col-lg-12">
-                    <h2>Estados</h2>
+            <div class="row justify-content-center">
+                <div class="col align-items-center">
+                    <div data-aos="zoom-out">
+                        <h1>Estados</h1>
+                        <h2>Conheça os melhores lugares para ir em cada estado do Brasil!</h2>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="search">
+                                <input type="text" placeholder="Procure por um estado" />
+                                <button class="btn-busca">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <main>
-            <div class="container-edit">
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= Section Estados ======= -->
+        <section class="estados">
+            <div class="container primeiro-carrossel">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -103,20 +121,24 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./assets/img/rio/pao-de-acucar.webp"
-                                        alt="Pão de açucar, Rio de Janeiro">
+                                    <img class="d-block" src="./assets/img/rio/pao-de-acucar.webp"
+                                        alt="Pão de açucar, Rio de Janeiro" width="100% " height="500px "
+                                        background-size="cover" object-fit="fill">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./assets/img/rio/cristo-redentor.webp"
-                                        alt="Cristo Redentor, Rio de Janeiro">
+                                    <img class="d-block" src="./assets/img/rio/cristo-redentor.webp"
+                                        alt="Cristo Redentor, Rio de Janeiro" width="100% " height="500px "
+                                        background-size="cover" object-fit="fill">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./assets/img/rio/copacabana.webp"
-                                        alt="Copacabana, Rio de Janeiro">
+                                    <img class="d-block" src="./assets/img/rio/copacabana.webp"
+                                        alt="Copacabana, Rio de Janeiro" width="100% " height="500px "
+                                        background-size="cover" object-fit="fill">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./assets/img/rio/maracana.webp"
-                                        alt="Estádio Maracanã, Rio de Janeiro">
+                                    <img class="d-block" src="./assets/img/rio/maracana.webp"
+                                        alt="Estádio Maracanã, Rio de Janeiro" width="100% " height="500px "
+                                        background-size="cover" object-fit="fill">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -129,6 +151,7 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="col-lg-4">
                         <h3 class="local-name">Rio de Janeiro</h3>
                         <div class="portfolio-info">
@@ -143,35 +166,35 @@
                                 <span class="media text-secondary"><b class="text-dark">4.0</b> de 392 avaliações</span>
                             </div>
                         </div>
-                        <p class="text-dark">O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas
+                        <p>O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas
                             praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no
                             topo
-                            do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume. A
-                            cidade
-                            também é conhecida pelas grandes favelas. O empolgante Carnaval, com carros alegóricos,
-                            fantasias extravagantes e sambistas, é considerado o maior do mundo.</p>
+                            do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume.
+                            <br><br>
+                            O empolgante Carnaval, com carros alegóricos,
+                            fantasias extravagantes e sambistas, é considerado o maior do mundo.
+                        </p>
                         <a href="https://www.decolar.com/pacotes/rio/pacotes-para-rio+de+janeiro"
-                            class="goToWebsite text-white">Ver pacotes</a>
+                            class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container sul-e-sudeste">
+                <div class="row d-flex text-center">
+                    <div class="col">
+                        <h2 class="text-dark">Sul e Sudeste</h2>
                     </div>
                 </div>
-            </div>
-        </main>
-        <div class="container">
-            <div class="row d-flex text-left my-5">
-                <div class="col-lg-12">
-                    <h2 class="text-dark">Sul e Sudeste</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid maybe-like-it">
-            <div class="row d-flex my-5">
+
                 <div class="col-lg-12 mb-5">
                     <div class="owl-carousel owl-theme">
                         <a href="javascript:void(0)" class="card">
                             <img src="./assets/img/capa-sp.webp" alt="São Paulo">
                             <h5>São Paulo</h5>
                             <div class="tags">
-                                <p>Estados</p>
+                                <p>Avaliação</p>
                                 <div>
                                     <i class="fas fa-star text-warning"></i>
                                     <span>4.5</span>
@@ -182,7 +205,7 @@
                             <img src="./assets/img/capa-es.webp" alt="Espírito Santo">
                             <h5>Espírito Santo</h5>
                             <div class="tags">
-                                <p>Estados</p>
+                                <p>Avaliação</p>
                                 <div>
                                     <i class="fas fa-star text-warning"></i>
                                     <span>4.5</span>
@@ -193,7 +216,7 @@
                             <img src="./assets/img/capa-mg.webp" alt="Minas Gerais">
                             <h5>Minas Gerais</h5>
                             <div class="tags">
-                                <p>Estados</p>
+                                <p>Avaliação</p>
                                 <div>
                                     <i class="fas fa-star text-warning"></i>
                                     <span>4.5</span>
@@ -204,7 +227,7 @@
                             <img src="./assets/img/capa-parana.webp" alt="Paraná">
                             <h5>Paraná</h5>
                             <div class="tags">
-                                <p>Estados</p>
+                                <p>Avaliação</p>
                                 <div>
                                     <i class="fas fa-star text-warning"></i>
                                     <span>4.5</span>
@@ -215,7 +238,7 @@
                             <img src="./assets/img/capa-rs.webp" alt="Rio Grande do Sul">
                             <h5>Rio Grande do Sul</h5>
                             <div class="tags">
-                                <p>Estados</p>
+                                <p>Avaliação</p>
                                 <div>
                                     <i class="fas fa-star text-warning"></i>
                                     <span>4.5</span>
@@ -226,7 +249,7 @@
                             <img src="./assets/img/capa-sc.webp" alt="Santa Catarina">
                             <h5>Santa Catarina</h5>
                             <div class="tags">
-                                <p>Estados</p>
+                                <p>Avaliação</p>
                                 <div>
                                     <i class="fas fa-star text-warning"></i>
                                     <span>4.5</span>
@@ -236,249 +259,250 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row d-flex text-left my-5">
-                <div class="col-lg-12">
-                    <h2 class="text-dark">Centro-Oeste e Norte</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid look-at-this">
-            <div class="row d-flex my-5">
-                <div class="col-lg-12 mb-5">
-                    <div class="owl-carousel owl-theme">
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-ms.webp" alt="Mato Grosso do Sul">
-                            <h5>Mato Grosso do Sul</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-goias.webp" alt="Goiás">
-                            <h5>Goiás</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-mato-grosso.webp" alt="Mato Grosso">
-                            <h5>Mato Grosso</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-tocantins.webp" alt="Tocantins">
-                            <h5>Tocantins</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-amazonas.webp" alt="Amazonas">
-                            <h5>Amazonas</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-acre.webp" alt="Acre">
-                            <h5>Acre</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-amapa.webp" alt="Amapá">
-                            <h5>Amapá</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-para.webp" alt="Pará">
-                            <h5>Pará</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-rondonia.webp" alt="Rondônia">
-                            <h5>Rondônia</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-roraima.webp" alt="Roraima">
-                            <h5>Roraima</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row d-flex text-left my-5">
-                <div class="col-lg-12">
-                    <h2 class="text-dark">Nordeste</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid maybe-like-it">
-            <div class="row d-flex my-5">
-                <div class="col-lg-12 mb-5">
-                    <div class="owl-carousel owl-theme">
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-sergipe.webp" alt="Sergipe">
-                            <h5>Sergipe</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-bahia.webp" alt="Bahia">
-                            <h5>Bahia</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-ceara.webp" alt="Ceará">
-                            <h5>Ceará</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-alagoas.webp" alt="Alagoas">
-                            <h5>Alagoas</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-maranhao.webp" alt="Maranhão">
-                            <h5>Maranhão</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-paraiba.webp" alt="Paraíba">
-                            <h5>Paraíba</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-pernambuco.webp" alt="Pernambuco">
-                            <h5>Pernambuco</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-rn.webp" alt="Rio Grande do Norte">
-                            <h5>Rio Grande do Norte</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0)" class="card">
-                            <img src="./assets/img/capa-piaui.webp" alt="Piauí">
-                            <h5>Piauí</h5>
-                            <div class="tags">
-                                <p>Estados</p>
-                                <div>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <span>4.5</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <!-- ======= End Estados Section ======= -->
+            <div class="container centro-oeste-e-norte">
+                <div class="row d-flex text-center">
+                    <div class="col">
+                        <h2 class="text-dark">Centro-Oeste e Norte</h2>
+                    </div>
+                </div>
+
+                <div class="row d-flex">
+                    <div class="col-lg-12 mb-5">
+                        <div class="owl-carousel owl-theme">
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-ms.webp" alt="Mato Grosso do Sul">
+                                <h5>Mato Grosso do Sul</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-goias.webp" alt="Goiás">
+                                <h5>Goiás</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-mato-grosso.webp" alt="Mato Grosso">
+                                <h5>Mato Grosso</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-tocantins.webp" alt="Tocantins">
+                                <h5>Tocantins</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-amazonas.webp" alt="Amazonas">
+                                <h5>Amazonas</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-acre.webp" alt="Acre">
+                                <h5>Acre</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-amapa.webp" alt="Amapá">
+                                <h5>Amapá</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-para.webp" alt="Pará">
+                                <h5>Pará</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-rondonia.webp" alt="Rondônia">
+                                <h5>Rondônia</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-roraima.webp" alt="Roraima">
+                                <h5>Roraima</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container nordeste">
+                <div class="row d-flex text-center">
+                    <div class="col">
+                        <h2 class="text-dark">Nordeste</h2>
+                    </div>
+                </div>
+
+                <div class="row d-flex">
+                    <div class="col-lg-12 mb-5">
+                        <div class="owl-carousel owl-theme">
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-sergipe.webp" alt="Sergipe">
+                                <h5>Sergipe</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-bahia.webp" alt="Bahia">
+                                <h5>Bahia</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-ceara.webp" alt="Ceará">
+                                <h5>Ceará</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-alagoas.webp" alt="Alagoas">
+                                <h5>Alagoas</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-maranhao.webp" alt="Maranhão">
+                                <h5>Maranhão</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-paraiba.webp" alt="Paraíba">
+                                <h5>Paraíba</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-pernambuco.webp" alt="Pernambuco">
+                                <h5>Pernambuco</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-rn.webp" alt="Rio Grande do Norte">
+                                <h5>Rio Grande do Norte</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="card">
+                                <img src="./assets/img/capa-piaui.webp" alt="Piauí">
+                                <h5>Piauí</h5>
+                                <div class="tags">
+                                    <p>Avaliação</p>
+                                    <div>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ======= End Estados Section ======= -->
+
+    </main>
 
     <!-- ======= Footer ======= -->
     <footer class="footer">
@@ -571,6 +595,33 @@
                 }
             }
         })
+    </script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
 
 </body>

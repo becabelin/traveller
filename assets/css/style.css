@@ -2,6 +2,10 @@
 # General
 --------------------------------------------------------------*/
 
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     color: #444444;
@@ -9,12 +13,16 @@ body {
 
 a {
     color: #F0773D;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover {
     color: #F0773D;
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+main {
+    background-color: #F7F7F7;
 }
 
 h1,
@@ -60,6 +68,7 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -69,6 +78,7 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -339,6 +349,7 @@ h6 {
     .navbar .dropdown .dropdown ul {
         left: -90%;
     }
+
     .navbar .dropdown .dropdown:hover>ul {
         left: -100%;
     }
@@ -362,6 +373,7 @@ h6 {
     .mobile-nav-toggle {
         display: block;
     }
+
     .navbar ul {
         display: none;
     }
@@ -481,12 +493,12 @@ h6 {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
 }
 
 #hero h2 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     margin-bottom: 40px;
     font-size: 24px;
     text-align: center;
@@ -509,6 +521,7 @@ h6 {
     width: 400px;
     padding: 0 20px;
     border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .search input:focus {
@@ -537,9 +550,11 @@ h6 {
     .search i {
         left: 4px
     }
+
     .search input {
         padding-left: 34px
     }
+
     .search .btn-busca {
         height: 37px;
         top: 5px
@@ -556,21 +571,26 @@ h6 {
     #hero {
         padding-top: 80px;
     }
+
     #hero .animated {
         -webkit-animation: none;
         animation: none;
     }
+
     #hero .hero-img {
         text-align: center;
     }
+
     #hero .hero-img img {
         max-width: 50%;
     }
+
     #hero h1 {
         font-size: 28px;
         line-height: 32px;
         margin-bottom: 10px;
     }
+
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
@@ -588,6 +608,7 @@ h6 {
     0% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -597,6 +618,7 @@ h6 {
     0% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -1018,6 +1040,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1027,6 +1050,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
