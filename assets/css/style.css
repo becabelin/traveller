@@ -34,57 +34,6 @@ h6 {
     font-family: "Poppins", sans-serif;
 }
 
-
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
-    background: #F7F7F7;
-}
-
-#preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid #F0773D;
-    border-top-color: #d2f9eb;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes animate-preloader {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -101,6 +50,7 @@ h6 {
     height: 40px;
     border-radius: 50px;
     transition: all 0.4s;
+    margin-bottom: 10px !important;
 }
 
 .back-to-top i {
@@ -110,8 +60,11 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #F0773D;
-    color: #F7F7F7;
+    background: #F7F7F7;
+}
+
+.back-to-top i:hover {
+    color: #F0773D;
 }
 
 .back-to-top.active {
