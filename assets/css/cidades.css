@@ -188,12 +188,33 @@
 @media (min-width: 1024px) {
     .testimonials {
         background-attachment: fixed;
+        width: 100%;
     }
 }
 
 @media (min-width: 992px) {
     .testimonials .testimonial-item p {
-        width: 80%;
+        width: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .testimonials {
+        background-attachment: fixed;
+        width: 100%;
+        padding: 20px 0px !important;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    .testimonials .testimonial-item p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .testimonials .testimonial-item .quote-icon-left,
+    .testimonials .testimonial-item .quote-icon-right {
+        font-size: 14px;
     }
 }
 
@@ -223,7 +244,7 @@
 
 @media (max-width: 992px) {
     .breadcrumbs h2 {
-        margin: 0 0 10px 0;
+        margin: 10 0 10px 0;
     }
 }
 
@@ -305,6 +326,13 @@
     color: #F0773D;
 }
 
+@media (max-width: 992px) {
+    .sobre .btn-carousel {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -380,6 +408,20 @@
     background: #f7f7f7;
     color: #1596DE;
 }
+
+@media (max-width: 1024px) {
+    .features .img-fluid {
+        height: auto;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .features .btn-features {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -569,6 +611,13 @@
     position: relative;
 }
 
+.portfolio-details .swiper-slide img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    object-fit: fill;
+}
+
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
@@ -641,6 +690,18 @@
         margin-top: -160px;
     }
 }
+
+@media (max-width: 980px) {
+.portfolio-details .swiper-slide img {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    object-fit: fill;
+    border-radius: 20px;
+}
+}
+
+
 
 /*--------------------------------------------------------------
   # Comments

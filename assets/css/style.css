@@ -34,6 +34,10 @@ h6 {
     font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 980px) {
+    main{padding: 0px 20px;}
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -664,6 +668,24 @@ section {
     color: #F0773D;
 }
 
+@media (max-width: 980px) {
+
+
+    .sobre h1 {
+        width: 100%;
+    }
+
+    .sobre h2 {
+        line-height: auto;
+        width: 100%;
+    }
+
+    .sobre img {
+        width: 60%;
+        margin-top: 40px;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -1118,6 +1140,15 @@ section {
     .services .service-box {
         padding: 40px 20px;
         margin-bottom: auto;
+    }
+}
+
+@media (max-width: 980px) {
+
+
+    .services .service-box {
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 
