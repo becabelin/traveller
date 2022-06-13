@@ -1237,3 +1237,34 @@ section {
     color: #F0773D;
     margin-left: 20px;
 }
+
+@media (max-width: 1350px) {
+    .em-construcao {
+        padding: 140px 0px;
+    }
+}
+
+@media (max-width: 980px) {
+    .em-construcao {
+        padding: 60px 20px;
+    }
+
+    .em-construcao h1 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        width: 100%;
+        color: #111111;
+    }
+
+    .em-construcao .btn-cadastrar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .em-construcao .btn-voltar {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0px;
+    }
+}
