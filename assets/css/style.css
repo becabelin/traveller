@@ -855,10 +855,19 @@ section {
     transform: scale(1.1);
 }
 
+.gslide-image img {
+    width: 100%;
+    height: 80vh;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contato {
+    padding: 60px 0px 30px 0px !important;
+}
 
 .contato .info {
     width: 100%;
@@ -1173,4 +1182,58 @@ section {
 .footer .col p {
     text-align: left;
     padding-top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Em construção
+--------------------------------------------------------------*/
+
+.em-construcao {
+    padding: 200px 0px;
+}
+
+.em-construcao h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    width: 50%;
+    color: #111111;
+}
+
+.em-construcao p {
+    padding: 20px 0px;
+    width: 80%;
+}
+
+.em-construcao img {
+    width: 100%;
+}
+
+.em-construcao .btn-cadastrar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #F7F7F7;
+    background: #F0773D;
+}
+
+.em-construcao .btn-cadastrar:hover {
+    background: #F7F7F7;
+    color: #F0773D;
+}
+
+.em-construcao .btn-voltar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: 0.5s;
+    color: #F0773D;
+    margin-left: 20px;
 }
