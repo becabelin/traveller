@@ -465,7 +465,7 @@ h6 {
 .search input {
     height: 50px;
     border: none;
-    width: 400px;
+    width: 79%;
     padding: 0 20px;
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
@@ -482,7 +482,7 @@ h6 {
     height: 50px;
     background-color: #F0773D;
     color: #F7F7F7;
-    width: 120px;
+    width: 20%;
     border-radius: 50px;
     transition: 0.5s;
 }
