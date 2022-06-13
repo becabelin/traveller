@@ -35,7 +35,7 @@ h6 {
 .main-container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 h2 {
@@ -67,18 +67,25 @@ h2 {
 
 .right {
     width: 55%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@media (max-width: 1000px) {
-    .right {
-        width: 100%;
+@media (max-width: 1350px) {
+    .mt-5 h2 {
+        margin-top: 80px !important;
     }
-    .left {
-        display: none;
+
+    .right {
+        margin-bottom: 70px !important;
+        height: auto !important;
+    }
+
+    .welcome {
+        width: 70% !important;
     }
 }
 
@@ -170,4 +177,19 @@ h2 {
     border-radius: 20px;
     margin-right: 10px;
     width: 50%;
+}
+
+@media (max-width:1080px) {
+    .search i {
+        left: 4px
+    }
+
+    .search input {
+        padding-left: 34px
+    }
+
+    .search .btn-busca {
+        height: 37px;
+        top: 5px
+    }
 }
