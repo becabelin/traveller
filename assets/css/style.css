@@ -577,8 +577,9 @@ h6 {
 }
 
 @media (max-width: 575px) {
-    #hero .hero-img img {
-        width: 80%;
+    #hero {
+        padding: 60px 10px 40px 10px;
+        height: 50%;
     }
 }
 
