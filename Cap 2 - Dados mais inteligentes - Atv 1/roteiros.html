@@ -1,55 +1,142 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>Gulliver Traveller - Roteiros</title>
+    <meta content="O Projeto Traveller é dedicado a viajantes que queiram conhecer os mais diversos lugares do mundo"
+        name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Ícones -->
+    <link href="/assets/img/logo.webp" rel="icon" />
+    <link href="/assets/img/mobile.webp" rel="mobile-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet" />
+
+    <!-- CSS principal -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <b>->1 - Roteiros para *São Paulo*</b>
-    <br>A Terra da Garoa!<br>
-    Fundada em 25 de janeiro de 1554 a cidade tem hoje
-    cerca de 12 milhões de habitantes e é considerada o centro financeiro do Brasil e aqui vão 3 dicas de roteiros
-    obrigatórios para aqueles que passam pela capital paulista
+    <main id="main">
 
-    <br>#Roteiro A | Região: Avenida Paulista
-    <br>MASP; Parque Trianon; Rua Augusta
+        <section id="sobre" class="sobre">
+            <div class="container" style="margin: -40px 0px 0px 10px; padding-bottom: 30px;">
+                <div class="row content">
 
-    <br>#Roteiro B | Região: Centro
-    <br>Catedral da Sé; Pátio do Colégio; Rua Augusta
+                    <p style="margin: 30px 0px 0px 0px; color: #111;">Olá, você pode consultar o código e ver os resultados no Console!</p>
 
-    <br>#Roteiro C | Região: Vila Madalena
-    <br>Beco do Batman; Feirinha da Benedito Calixto; Livraria da Vila
-    <br>
+                    <div class="col-md-10 pt-4">
+                        <h1 style="width: 100%;">O nome das cidades avaliadas</h1>
+                        <button onclick="nomeDasCidades()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;  margin-bottom: 30px;">Exibir</button>
+                    </div>
 
-    <b>->2 - Roteiros para *Las Vegas*</b>
-    <br>Viva Las Vegas!
-    <br> A cidade mais populosa e mais densamente povoada do estado de Nevada, Las
-    Vegas foi fundada em 1905 e é considerada uma cidade, oficialmente, desde 1911 e conta com mais de meio milhão de
-    habitantes. Venha conhecer a capital dos jogos de azar!
+                    <div class="col-md-10 pt-4">
+                        <h1 style="width: 100%;">Conteúdo do roteiro A de cada cidade avaliada</h1>
 
-    <br>#Roteiro A | Região: Las Vegas Boulevard South
-    <br>Fonte do Bellagio; Principais Cassinos; Madame Tussauds
+                        <h4 style="color: #111; font-weight: 600;">São Paulo</h4>
+                        <button onclick="roteiroADeSaoPaulo()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;  margin-bottom: 30px;">Exibir</button>
 
-    <br>#Roteiro B | Região: Downtown
-    <br>; Fremont; Las Vegas Art Museum; Museu nacional do Crime Organizado;
+                        <h4 style="color: #111; font-weight: 600;">Las Vegas</h4>
+                        <button onclick="roteiroADeLasVegas()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7; margin-bottom: 30px;">Exibir</button>
 
-    <br>#Roteiro C | Região: Las Vegas Boulevard North
-    <br>Outlet Premium North; Stratosphere; Apple Fashion Show<br>
+                        <h4 style="color: #111; font-weight: 600;">Moscou</h4>
+                        <button onclick="roteiroADeMoscou()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;  margin-bottom: 30px;">Exibir</button>
 
-    <b>->3 - Roteiros para *Moscou*</b>
-    <br>Privet!
-    <br>A capital Russa fica situada às margens do Rio Moscou e apesar de ser a cidade mais cosmopolita da Rússia, conta
-    com grande resguardo de sua história soviética
+                    </div>
 
-    <br>#Roteiro A | Região: Praça Vermelha
-    <br>Museu Histórico do Estado; Catedral de São Basílico; Mausoléu de Lênin
+                    <div class="col-md-10 pt-4">
+                        <h1 style="width: 100%;">Quantos locais são citados no roteiro A de cada cidade</h1>
 
-    <br>#Roteiro B | Região: Centro
-    <br>Teatro Bolshoi; Monumento a Karl Marx; Rio Moscou
+                        <h4 style="color: #111; font-weight: 600;">São Paulo</h4>
+                        <button onclick="qtdLocaisSaoPaulo()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;  margin-bottom: 30px;">Exibir</button>
 
-    <br>#Roteiro C | Região: Obras pela cidade
-    <br>Metrô de Moscou; As Sete Irmãs; Moscow Leningradsky Railway Station <br>
+                        <h4 style="color: #111; font-weight: 600;">Las Vegas</h4>
+                        <button onclick="qtdLocaisLasVegas()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7; margin-bottom: 30px;">Exibir</button>
 
+                        <h4 style="color: #111; font-weight: 600;">Moscou</h4>
+                        <button onclick="qtdLocaisMoscou()"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;  margin-bottom: 30px;">Exibir</button>
+
+                    </div>
+
+                    <div class="col-md-10 pt-4">
+                        <h1 style="width: 100%;">O nome dos pontos turísticos</h1>
+
+                        <div class="col-md-10 pt-2">
+
+                            <h4 style="color: #111; font-weight: 600;">Centro - São Paulo</h4>
+
+                            <button onclick="nomePontosCentro()" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;">Exibir</button>
+
+                        </div>
+
+                        <div class="col-md-10 pt-4">
+
+                            <h4 style="color: #111; font-weight: 600;">Downtown - Los Angeles</h4>
+
+                            <button onclick="nomePontosDowntown()" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 14px;
+                            letter-spacing: 1px; display: inline-block; padding: 5px 20px; border-radius: 50px;
+                            transition: 0.5s; color: #F7F7F7; background: #F0773D; border: #F7F7F7;">Exibir</button>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 pt-4">
+                        <h1>Grupo 24</h1>
+
+                        <p style="margin: 1; color: #111;">Isabelle Rodrigues Santos (rm96065)</p>
+                        <p style="margin: 1; color: #111;">Mateus Ferreira Gaspar de Miranda (rm94853)</p>
+                        <p style="margin: 1; color: #111;">Rebeca Alves Sousa (rm96110)</p>
+                        <p style="margin: 1; color: #111;">Victor Juaci Aquino de Medeiros (rm93913)</p>
+                        <p style="margin: 1; color: #111;">Vinícius Gabriel Bernardes dos Santos (rm95220)</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 <script src="main.js"></script>
